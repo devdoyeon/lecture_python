@@ -1,4 +1,11 @@
 # 진법 변환
+# bin(Binary) 2진수 값으로 변환
+# oct(Octal) 8진수 값으로 변환
+# hex(Hexadecimal) 16진수 값으로 변환
+
+# int(Integer) 10진수 값으로 변환
+# int(0x1A, 16) => 16진수인 0x1A라는 값을 10진수로 변환
+
 print(bin(100)) # 0b110010
 print(oct(100)) # 0o144
 print(hex(100)) # 0x64
