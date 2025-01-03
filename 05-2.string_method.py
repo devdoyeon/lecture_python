@@ -1,38 +1,35 @@
-# find
 st = 'python string'
+
+# find
 print(st.find('string')) # 7
 
 # count
-st = 'python string'
 print(st.count('t')) # 2
 
 # lower
-st = 'PYTHON STRING'
 print(st.lower()) # python string
 
 # upper
-st = 'python string'
 print(st.upper()) # PYTHON STRING
 
-# strip
-st = ' python string '
-print(st.strip()) # python string
-
-# lstrip
-st = ' python string '
-print(st.lstrip()) # python string
-
-# rstrip
-st = ' python string '
-print(st.rstrip()) #  python string
-
 # replace
-st = 'python string'
 print(st.replace('string', '문자열')) # python 문자열
 
 # split
-st = 'python string'
 print(st.split(' ')) # ['python', 'string']
+
+
+st = ' python string '
+
+# strip
+print(st.strip()) # python string
+
+# lstrip
+print(st.lstrip()) # 'python string '
+
+# rstrip
+st = ' python string '
+print(st.rstrip()) # ' python string'
 
 # 예제 1
 A = "Have a"
