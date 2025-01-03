@@ -28,7 +28,6 @@ print(st.strip()) # python string
 print(st.lstrip()) # 'python string '
 
 # rstrip
-st = ' python string '
 print(st.rstrip()) # ' python string'
 
 # 예제 1
