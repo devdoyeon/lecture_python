@@ -1,3 +1,5 @@
+from random import randint, choice
+
 """
 반복문 for
 for 변수명 in range(반복횟수):
@@ -95,7 +97,6 @@ print(num)
 # 'a' ~ 'z' 까지 임의의 문자열을 8자리씩
 # 총 10개를 생성하는 코드를 작성 하시오
 # (시리얼 넘버 생성)
-from random import randint, choice
 
 for serial in range(10):
     for char in range(8):
