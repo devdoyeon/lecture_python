@@ -110,9 +110,6 @@ for serial in range(10):
 
 for serial in range(10):
     for char in range(16):
-        a = randint(97, 122)
-        b = randint(65, 90)
-        c = randint(48, 57)
-        items = [a, b, c]
+        items = [randint(97, 122), randint(65, 90), randint(48, 57)]
         print(chr(choice(items)), end="")
     print()
