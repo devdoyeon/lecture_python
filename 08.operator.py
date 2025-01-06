@@ -8,11 +8,11 @@ num1, num2, num3 = 5, 15, 27
 # ㄹ. 5.4
 # ㅁ. 3.0
 
-print(num2 - num3) # -12
-print(num1 * num2) # 75
-print(num1 * num1) # 25
-print(num3 / num1) # 5.4
-print(num2 / num1) # 3.0
+print(num2 - num3)  # -12
+print(num1 * num2)  # 75
+print(num1 * num1)  # 25
+print(num3 / num1)  # 5.4
+print(num2 / num1)  # 3.0
 
 # 다음의 연산자를 보고 True와 False를 구분 하시오
 # ㄱ. 7 > 18 # False
@@ -27,53 +27,53 @@ print(num2 / num1) # 3.0
 # a 가 짝수인 조건 만들기
 a = 10
 if a % 2 == 0:
-    print('Even')
+    print("Even")
 else:
-    print('Odd')
+    print("Odd")
 
-#a를 2로 나누어 0이면 false이고, not이면 True 의미
+# a를 2로 나누어 0이면 false이고, not이면 True 의미
 a = 10
 if not a % 2:
-    print('Even')
+    print("Even")
 else:
-    print('Odd')
+    print("Odd")
 
 # a 가 홀수인 조건 만들기
 a = 9
 if a % 2 == 1:
-    print('Odd')
+    print("Odd")
 else:
-    print('Even')
+    print("Even")
 
-#a를 2로 나누어 0이면 false이고, not이면 True 의미
+# a를 2로 나누어 0이면 false이고, not이면 True 의미
 a = 9
 if a % 2:
-    print('Odd')
+    print("Odd")
 else:
-    print('Even')
+    print("Even")
 
 # a 가 3의 배수인 조건 만들기
 # a를 3로 나누어 0이면 false이고, not이면 True 의미
 a = 9
 if not a % 3:
-    print('3배수')
+    print("3배수")
 else:
-    print('배수 아님')
+    print("배수 아님")
 
 a = 15
 if 10 < a < 20:
-    print('10 < a < 20')
+    print("10 < a < 20")
 else:
-    print('Not 10 < a < 20')
+    print("Not 10 < a < 20")
 
-a, b= 0,1
+a, b = 0, 1
 if type(a) is int and type(b) is int:
-    print('a and b int all')
+    print("a and b int all")
 else:
-    print('a and b not int all')
+    print("a and b not int all")
 
-a, b= 0,1
+a, b = 0, 1
 if type(a) is int and type(b) is not int:
-    print('a and b int all')
+    print("a and b int all")
 else:
-    print('a and b not int all')
+    print("a and b not int all")
