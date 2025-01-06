@@ -184,6 +184,7 @@ elif 120 <= obesity < 130:
 else:
     str = "고도비만"
 print(f"{name}님의 비만도는 {obesity}%로 {str}입니다.")
+
 # 예제 2
 # 윤년을 구하는 코드를 작성 하시오
 # - 4의 배수는 윤년이 된다. 그 외는 평년
@@ -196,3 +197,39 @@ if year % 4 == 0 and year % 100 != 0 or year % 400 == 0:
     print(f"{year}년은 윤년입니다.")
 else:
     print(f"{year}년은 평년입니다.")
+
+# 예제 3
+"""
+            2018년 5월
+Sun. Mon. Tue. Wed. Thu. Fri. Sat.
+             1    2    3    4    5
+   6    7    8    9   10   11   12
+  13   14   15   16   17   18   19
+  20   21   22   23   24   25   26
+  27   28   29   30   31
+"""
+# 위의 달력 형태를 보고 사용자가 입력하는 날짜 값에 맞는 요일을 출력하시오.
+# 입력 예제
+# 일자 : 10
+# 일자 : 35
+# 출력 예제
+# 10일은 목요일(Thu.) 입니다.
+# 입력 값의 범위를 벗어났습니다.
+day = int(input("일자: "))
+if 1 <= day <= 31:
+    if day % 7 == 1:
+        print(f"{day}일은 화요일(Tue.) 입니다.")
+    elif day % 7 == 2:
+        print(f"{day}일은 수요일(Wed.) 입니다.")
+    elif day % 7 == 3:
+        print(f"{day}일은 목요일(Thu.) 입니다.")
+    elif day % 7 == 4:
+        print(f"{day}일은 금요일(Fri.) 입니다.")
+    elif day % 7 == 5:
+        print(f"{day}일은 토요일(Sat.) 입니다.")
+    elif day % 7 == 6:
+        print(f"{day}일은 일요일(Sun.) 입니다.")
+    elif day % 7 == 0:
+        print(f"{day}일은 월요일(Mon.) 입니다.")
+else:
+    print("입력 값의 범위를 벗어났습니다.")
