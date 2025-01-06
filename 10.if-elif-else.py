@@ -84,7 +84,34 @@ plus = input(f"{rand1} + {rand2} = ")
 if int(plus) == rand1 + rand2:
     print("정답입니다.")
 else:
-    print("오답입니다.")
+    print(f"오답입니다. 정답은 {rand1 + rand2}입니다.")
+
+# 예제 5
+# 계정 생성 프로그램을 작성 하시오.
+# 1. 사용자로 부터 계정을 생성하기 위한 ID와 PW를 입력 받습니다.
+# 2. PW의 경우 한번 더 사용자 입력을 받아서 이전에 입력한 PW와 일치
+# 한 PW를 입력 하였는지를 확인하여 일치한 경우에만 "계정 생성 완료"
+# 메시지를 출력하고 그렇지 않은 경우에는 "계정 생성 실패" 메시지
+# 를 출력하게 하시오.
+
+id_input = input("ID를 입력하세요: ")
+pw_input = input("PW를 입력하세요: ")
+pw_chk = input("PW를 다시 한 번 입력하세요: ")
+if pw_input == pw_chk:
+    print("계정 생성 완료")
+else:
+    print("계정 생성 실패")
+
+# 예제 6
+# 10 ~ 99 까지 임의의 값 2개를 생성하고 나누기 계산을
+# 할 때 '큰값 / 작은값'의 형태가 되도록 코드 작성
+one = randint(10, 99)
+two = randint(10, 99)
+print(one, two)
+if one > two:
+    print(one / two)
+else:
+    print(two / one)
 
 """
 if ... elif ... else문
