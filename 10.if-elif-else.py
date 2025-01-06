@@ -280,7 +280,7 @@ if db < 40 or calc < 40 or os < 40 or sw < 40 or data < 40:
         print(f"과락으로 인한 불합격입니다. 점수: {sw}점")
     elif data < 40:
         print(f"과락으로 인한 불합격입니다. 점수: {data}점")
-elif (db + calc + os + sw + data) / 6 < 60:
+elif (db + calc + os + sw + data) / 5 < 60:
     print("평균 60점 이하로 불합격입니다.")
 else:
     print("합격입니다.")
