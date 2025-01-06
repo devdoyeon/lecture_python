@@ -193,7 +193,11 @@ print(f"{name}님의 비만도는 {obesity}%로 {str}입니다.")
 # 그 외는 평년
 # 출력 예제 : 2017년은 평년 입니다.
 year = int(input("연도를 입력해 주세요: "))
-if year % 4 == 0 and year % 100 != 0 or year % 400 == 0:
+if year % 4 == 0 and year % 100 != 0 and year % 400 == 0:
+    print(f"{year}년은 윤년입니다.")
+elif year % 4 == 0 and year % 100 == 0:
+    print(f"{year}년은 평년입니다.")
+elif year % 4 == 0:
     print(f"{year}년은 윤년입니다.")
 else:
     print(f"{year}년은 평년입니다.")
@@ -233,3 +237,41 @@ if 1 <= day <= 31:
         print(f"{day}일은 월요일(Mon.) 입니다.")
 else:
     print("입력 값의 범위를 벗어났습니다.")
+
+# 예제 4
+# 24시간 체계를 오전/오후 12시간 체계로 변경하는 코드를 작성하시오.
+# 1. 사용자로 입력은 1 ~ 24 까지의 값을 입력 받습니다.
+# 2. 1 ~ 11 까지의 시간은 오전 시간으로 표시 합니다.
+# 3. 13 ~ 23 까지의 시간은 오후 시간으로 표시 합니다.
+# 4. 12, 24 시간은 정오, 자정 으로 표시 합니다.
+# 5. 요구한 입력 값의 범위를 벗어난 경우 "입력값의 범위를 초과하였습니다."를 출력 합니다.
+time = int(input("시간을 입력하세요: "))
+if 1 <= time <= 11:
+    print(f"오전 {time}시입니다.")
+elif 13 <= time <= 23:
+    print(f"오후 {time - 12}시입니다.")
+elif time == 12:
+    print("정오입니다.")
+elif time == 24:
+    print("자정입니다.")
+else:
+    print("입력값의 범위를 초과하였습니다.")
+
+# 예제 5
+# 정보처리기사 과목은 데이터베이스, 전자 계산기 구조, 운영 체제, 소프트웨어
+# 공학, 데이터 통신이 있다. 각 과목의 점수를 입력받아 합격 불합격을 알려주는
+# 프로그램을 만드시오.
+#     - 정보처리기사는 한 과목 점수가 40점 미만이면 과락으로 불합격 된다.
+#     - 정보처리기사는 모든 과목의 평균이 60점 이상이어야 합격으로 처리 된다.
+
+db = int(input("데이터베이스: "))
+calc = int(input("전자 계산기 구조: "))
+os = int(input("운영 체제: "))
+sw = int(input("소프트웨어 공학: "))
+data_communication = int(input("데이터 통신: "))
+if db < 40 or calc < 40 or os < 40 or sw < 40 or data_communication < 40:
+    print("과락으로 인한 불합격입니다.")
+elif (db + calc + os + sw + data_communication) / 6 < 60:
+    print("평균 60점 이하로 불합격입니다.")
+else:
+    print("합격입니다.")
