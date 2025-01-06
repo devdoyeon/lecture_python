@@ -8,11 +8,11 @@ num1, num2, num3 = 5, 15, 27
 # ㄹ. 5.4
 # ㅁ. 3.0
 
-print(num2 - num3)
-print(num1 * num2)
-print(num1 * num1)
-print(num3 / num1)
-print(num2 / num1)
+print(num2 - num3) # -12
+print(num1 * num2) # 75
+print(num1 * num1) # 25
+print(num3 / num1) # 5.4
+print(num2 / num1) # 3.0
 
 # 다음의 연산자를 보고 True와 False를 구분 하시오
 # ㄱ. 7 > 18 # False
