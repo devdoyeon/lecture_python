@@ -268,10 +268,19 @@ db = int(input("데이터베이스: "))
 calc = int(input("전자 계산기 구조: "))
 os = int(input("운영 체제: "))
 sw = int(input("소프트웨어 공학: "))
-data_communication = int(input("데이터 통신: "))
-if db < 40 or calc < 40 or os < 40 or sw < 40 or data_communication < 40:
-    print("과락으로 인한 불합격입니다.")
-elif (db + calc + os + sw + data_communication) / 6 < 60:
+data = int(input("데이터 통신: "))
+if db < 40 or calc < 40 or os < 40 or sw < 40 or data < 40:
+    if db < 40:
+        print(f"과락으로 인한 불합격입니다. 점수: {db}점")
+    elif calc < 40:
+        print(f"과락으로 인한 불합격입니다. 점수: {calc}점")
+    elif os < 40:
+        print(f"과락으로 인한 불합격입니다. 점수: {os}점")
+    elif sw < 40:
+        print(f"과락으로 인한 불합격입니다. 점수: {sw}점")
+    elif data < 40:
+        print(f"과락으로 인한 불합격입니다. 점수: {data}점")
+elif (db + calc + os + sw + data) / 6 < 60:
     print("평균 60점 이하로 불합격입니다.")
 else:
     print("합격입니다.")
