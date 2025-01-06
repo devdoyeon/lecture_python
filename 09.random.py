@@ -37,12 +37,14 @@ print(int(random() * 999) + 100)
 # 예제 3
 # 'A' ~ 'Z' 까지 임의의 문자 3자리를 출력하는 코드를 작성하시오
 # (단, randint(), randrange()는 사용 하지 않음)
-print(chr(int(random() * 26) + 65), chr(int(random() * 26) + 65), chr(int(random() * 26) + 65))
+for i in range(3):
+    print(chr(int(random() * 26) + 65))
 
 # 예제 4
 # 1 ~ 99 까지의 랜덤 값에 대해 짝수면 True,
 # 홀수면 False가 나오도록 하시오
 num = int(random() * 99) + 1
+print(num)
 if num % 2 == 0:
     print(True)
 else:
