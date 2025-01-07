@@ -113,3 +113,26 @@ for serial in range(10):
         items = [randint(97, 122), randint(65, 90), randint(48, 57)]
         print(chr(choice(items)), end="")
     print()
+
+# 예제 9
+# Lotto Number generator
+# 중복되지 않는 1~45까지의 숫자를 6개 추출
+from random import randint
+
+cnt = 0
+lot = ""
+for x in range(60):
+    num = f"{randint(1, 45)}"
+    if num + " " not in lot:
+        lot = lot + num + " "
+        cnt += 1
+    if cnt == 6:
+        print(lot)
+        break  # 반복 종료
+
+# 예제 10
+# 구구단 출력
+for i in range(1, 10):
+    print(f"===== {i}단 출력 =====")
+    for j in range(1, 10):
+        print(f"{i} * {j} = {i * j}")
