@@ -72,3 +72,17 @@ for idx in range(len(lst)):
     for idy in range(len(lst[idx])):
         lst[idx][idy] = idx + idy
         print(lst[idx][idy], end=" ")
+
+# Iterable
+list_1 = [1, 2, 3, 4, 5]
+print(list_1)
+list_2 = iter(list_1)
+print(next(list_2))
+print(next(list_2))
+print(next(list_2))
+print(next(list_2))
+
+# for
+list_1 = [1, 2, 3, 4, 5]
+for x in list_1:
+    print(x)
