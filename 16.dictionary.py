@@ -142,3 +142,29 @@ print(menu)
 
 # 예제 4
 # 메뉴를 자동으로 선택하여 출력하는 코드를 작성 하시오
+sel = input("메뉴를 출력하시겠습니까? (yes(기본)/no) : ")
+if sel == "yes" or sel != "no":
+    for x in menu:
+        print(x, menu[x])
+else:
+    print("메뉴 출력이 취소 되었습니다.")
+
+
+grade = {"국어": 73, "영어": 61, "수학": 65, "사회": 82, "역사": 71, "과학": 97}
+
+# 예제 5
+# 위의 성적표에서 국어, 영어, 수학 과목의 총점을 구하시오.
+total = 0
+subjects = ("국어", "영어", "수학")
+for key in subjects:
+    total += grade[key]
+print(f"국, 영, 수 총점 : {total}점")
+
+# 예제 6
+# 위의 성적표에서 모든 과목의 총점 및 평균을 구하시오.
+total = 0
+for value in grade.values():
+    total += value
+else:
+    print("모든 과목 총점 : {}점, 평균 : {:.2f}점".format(total, total / len(grade)))
+print(sum(grade.values()))
